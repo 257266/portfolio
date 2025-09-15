@@ -1,0 +1,115 @@
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    transition: background-color 0.5s, color 0.5s;
+    position: relative;
+  }
+
+  /* Placeholder fix */
+  .form-control::placeholder {
+    color: #6c757d;
+    opacity: 1;
+    transition: color 0.3s;
+  }
+  body.bg-dark .form-control::placeholder {
+    color: #adb5bd;
+  }
+
+  /* Section background fix for dark mode */
+  section.bg-light {
+    transition: background-color 0.5s, color 0.5s;
+  }
+  body.bg-dark section.bg-light {
+    background-color: #212529 !important; /* tối hơn */
+    color: #f8f9fa !important;
+  }
+
+  /* Fade-in */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  .fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Progress bar animation */
+  .progress-bar {
+    transition: width 2s ease-in-out;
+  }
+
+  /* Hover effect for skill bar */
+  .progress:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+  }
+
+  /* Card hover effect */
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+  /* Fix card bg in dark mode */
+  body.bg-dark .card {
+    background-color: #2c3034;
+    color: #f8f9fa;
+  }
+
+  /* Back to top button */
+  #backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 999;
+  }
+  
+  /* Card fix in dark mode */
+	body.bg-dark .card {
+	  background-color: #2c3034 !important;
+	  color: #f8f9fa !important;
+	  border-color: #444 !important;
+	}
+	body.bg-dark .card .card-title,
+	body.bg-dark .card .card-text {
+	  color: #f8f9fa !important;
+	}
+	body.bg-dark .card a.btn {
+	  background-color: #0d6efd;
+	  border-color: #0d6efd;
+	  color: #fff;
+	}
+	body.bg-dark .card a.btn:hover {
+	  background-color: #0b5ed7;
+	  border-color: #0a58ca;
+	}
+
+	/* Nav pills dark mode fix */
+	body.bg-dark .nav-pills .nav-link {
+	  color: #f8f9fa;
+	}
+	body.bg-dark .nav-pills .nav-link.active {
+	  background-color: #0d6efd;
+	  color: #fff;
+	}
+	/* Giữ màu nổi bật khi active trong dark mode */
+	body.bg-dark .navbar-dark .nav-link.active {
+	  color: #fff !important; /* xanh Bootstrap */
+	  font-weight: 600;
+	}
+	body.bg-dark .navbar-dark .nav-link {
+	  color: #f8f9fa !important;
+	  transition: color 0.3s ease;
+	}
+	body.bg-dark .navbar-dark .nav-link:hover {
+	  color: #fff !important;
+	}
+</style>
