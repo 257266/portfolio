@@ -1,168 +1,651 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="img/favicon.png" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>An's Profile</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="css/aos.css?ver=1.1.0" rel="stylesheet" />
+  <link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet" />
+  <link href="css/main.css?ver=1.1.0" rel="stylesheet" />
+  <noscript>
+    <style type="text/css">
+      [data-aos] {
+        opacity: 1 !important;
+        transform: translate(0) scale(1) !important;
+      }
+    </style>
+  </noscript>
 </head>
-<body class="bg-light text-dark" data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="80" tabindex="0">
 
-  <!-- Navbar -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
-	  <div class="container">
-		<a class="navbar-brand fw-bold" href="#">Portfolio</a>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-		  <span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
-		  <ul class="nav nav-pills ms-auto">
-			<li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
-			<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-			<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-			<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-		  </ul>
-		  <button id="modeToggle" class="btn btn-outline-secondary ms-3">🌙</button>
-		</div>
-	  </div>
-	</nav>
-
-
-  <!-- About -->
-  <section id="about" class="py-5 bg-light text-center fade-in">
-    <div class="container">
-      <!--<img src="https://via.placeholder.com/150" class="rounded-circle mb-3 shadow" alt="avatar">-->
-      <h1 class="fw-bold">Nguyen Hoang An</h1>
-      <p class="lead">Expert in digital transformation and technology solutions.</p>
+<body id="top">
+  <header>
+    <div class="profile-page sidebar-collapse">
+      <nav class="
+            navbar navbar-expand-lg
+            fixed-top
+            navbar-transparent
+            bg-primary
+          " color-on-scroll="400">
+        <div class="container">
+          <div class="navbar-translate">
+            <a class="navbar-brand" href="#" rel="tooltip">An's Profile</a>
+            <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+              aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span
+                class="navbar-toggler-bar bar3"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse justify-content-end" id="navigation">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link smooth-scroll" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link smooth-scroll" href="#skill">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link smooth-scroll" href="#project">Project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link smooth-scroll" href="#experience">Experience</a>
+              </li>              
+              <li class="nav-item">
+                <a class="nav-link smooth-scroll" href="#education">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link smooth-scroll" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="py-5 bg-light fade-in">
-    <div class="container">
-      <h2 class="mb-4 text-center fw-bold">Skills</h2>
-      <div class="row">
-        <div class="col-md-6">
-		  <p><h5>PROGRAMMING</h5></p>
-          <p>HTML / CSS / JavaScript</p>
-          <div class="progress mb-3">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 0%">90%</div>
-          </div>
-          <p>SAP ABAP</p>
-          <div class="progress mb-3">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width: 0%">90%</div>
-          </div>
-		  <p>.NET / C# / C++</p>
-          <div class="progress mb-3">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-dark" style="width: 0%">95%</div>
-          </div>
-          <p>SQL</p>
-          <div class="progress mb-3">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 0%">100%</div>
-          </div>
-        </div>
-        <div class="col-md-6">
-		  <p><h5>TECHNICAL TOOLS</h5></p>
-          <p>Visual Studio / Visual Studio Code</p>
-          <div class="progress mb-3">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 0%">95%</div>
-          </div>
-          <p>Github</p>
-          <div class="progress mb-3">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width: 0%">80%</div>
-          </div>
-		  <p>SQL Server Management Studio</p>
-          <div class="progress mb-3">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-dark" style="width: 0%">90%</div>
-          </div>
-          <p>Postman</p>
-          <div class="progress mb-3">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 0%">80%</div>
-          </div>
-        </div>
-          
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="py-5 bg-light fade-in">
-    <div class="container">
-      <h2 class="mb-4 text-center fw-bold">Projects</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="img/nidec.png" class="card-img-top" alt="project">
-            <div class="card-body">
-			  <h5 class="card-title">Nidec Production Management System</h5>
-			  <p class="card-text"><b>C# .NET Developer & Database Administrator.</b></p>
-			  <p class="card-text">Improve yield of base plate production process (quality improvement).​</p>
-			  <p class="card-text">Standard equipment management and document management.​</p>
-			  <p class="card-text">Follow up online machines working status​.</p>
-              <a href="nidec.html" class="btn btn-primary btn-sm">View details</a>
+  </header>
+  <div class="page-content">
+    <div>
+      <div class="profile-page">
+        <div class="wrapper">
+          <div class="page-header page-header-small" filter-color="green">
+            <div class="page-header-image" data-parallax="true" style="background-image: url('images/wp.png')">
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="img/gonsa.png" class="card-img-top" alt="project">
-            <div class="card-body">
-              <h5 class="card-title">Gonsa ERP System</h5>
-              <p class="card-text"><b>Bussiness Analyst & Database Administrator Team Leader</b></p>
-			  <p class="card-text">Deploy SAP S4/HANA as a Business Analyst and make the development reports as an ABAP developer.​</p>
-			  <p class="card-text">Deploy the company's digital transformation project (ERP, HRM, WORKPLACE, DMS, WMS) as a Business Analyst and Solution Architect.​</p>
-              <a href="gonsa.html" class="btn btn-primary btn-sm">View details</a>
+            <div class="container">
+              <div class="content-center">
+                <div class="cc-profile-image">
+                  <a href="#"><img src="images/avatar.jpg" alt="Image" /></a>
+                </div>
+                <div class="h2 title">Nguyễn Hoàng An</div>
+                <p class="category text-white">
+                  Expert in digital transformation and technology solutions.
+                </p>
+                <a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in"
+                  data-aos-anchor="data-aos-anchor">Contact Me</a>
+                  <a class="btn btn-primary" onclick="downloadCV()" target="_blank" data-aos="zoom-in"
+                  data-aos-anchor="data-aos-anchor">Download CV</a>
+              </div>
             </div>
-          </div>
-        </div>
-		<div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="img/vita.png" class="card-img-top" alt="project">
-            <div class="card-body">
-              <h5 class="card-title">Vitadairy SAP S4/HANA ERP System</h5>
-              <p class="card-text"><b>Senior SAP ABAP</b></p>
-			  <p class="card-text">Designed and implemented RICEF objects using best practices.​</p>
-			  <p class="card-text">Hands-on with S/4HANA and performance optimization.​</p>
-              <a href="vita.html" class="btn btn-primary btn-sm">View details</a>
+            <div class="section">
+              <div class="container">
+                <div class="button-container">
+                  <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.facebook.com/hoangan.nguyen.1656"
+                    target="_blank" rel="tooltip" title="Follow me on Facebook"><i class="fa fa-facebook"></i></a>
+                  <a class="btn btn-default btn-round btn-lg btn-icon" onclick="zalo()" rel="tooltip"
+                    title="Follow me on Zalo"><img src="images/zalo-2.png" class="p-2"></i></a>
+                  <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.instagram.com/annguyen2507/"
+                    target="_blank" rel="tooltip" title="Follow me on Instagram"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+      <div class="section" id="about">
+        <div class="container">
+          <div class="card" data-aos="fade-up" data-aos-offset="10">
+            <div class="row">
+              <div class="col-lg-6 col-md-12">
+                <div class="card-body">
+                  <div class="h4 mt-0 title">About</div>
+                  <p class="text-justify">
+                    Tôi là <b>Nguyễn Hoàng An</b>, một người chủ động học hỏi và không ngừng tìm kiếm cơ hội để hoàn thiện bản thân. Tôi quan tâm đến việc kết nối, hợp tác và chia sẻ tri thức, với mục tiêu tạo ra giá trị lâu dài cho công việc và tập thể.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <div class="card-body">
+                  <div class="h4 mt-0 title">Basic Information</div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <strong class="text-uppercase">Age:</strong>
+                    </div>
+                    <div class="col-sm-8">29</div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-sm-4">
+                      <strong class="text-uppercase">Gender:</strong>
+                    </div>
+                    <div class="col-sm-8">Male</div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-sm-4">
+                      <strong class="text-uppercase">Email:</strong>
+                    </div>
+                    <div class="col-sm-8">hoangan257266@gmail.com</div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-sm-4">
+                      <strong class="text-uppercase">Phone:</strong>
+                    </div>
+                    <div class="col-sm-8">+84354664688</div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-sm-4">
+                      <strong class="text-uppercase">Address:</strong>
+                    </div>
+                    <div class="col-sm-8">
+                      Ho Chi Minh City
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section pt-0" id="skill">
+        <div class="container">
+          <div class="h4 text-center mb-5 title">Professional Skills</div>
+          <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <div class="card-body">
+              <fieldset class="border p-3">
+                <legend style="width: auto">Front End Skill</legend>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="progress-container progress-primary">
+                      <span class="progress-badge">HTML & CSS/SCSS</span>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                          data-aos-duration="2000" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                          aria-valuemax="100" style="width: 70%"></div>
+                        <span class="progress-value">70%</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="progress-container progress-primary">
+                      <span class="progress-badge">Bootstrap & jquery</span>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                          data-aos-duration="2000" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                          aria-valuemax="100" style="width: 90%"></div>
+                        <span class="progress-value">90%</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="progress-container progress-primary">
+                      <span class="progress-badge">JavaScript (JS/JSX)</span>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                          data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                          aria-valuemax="100" style="width: 75%"></div>
+                        <span class="progress-value">75%</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="progress-container progress-primary">
+                      <span class="progress-badge">TypeScript (TS/TSX)</span>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                          data-aos-duration="2000" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                          aria-valuemax="100" style="width: 85%"></div>
+                        <span class="progress-value">85%</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="progress-container progress-primary">
+                      <span class="progress-badge">React (JS/Native)</span>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                          data-aos-duration="2000" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                          aria-valuemax="100" style="width: 75%"></div>
+                        <span class="progress-value">75%</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="progress-container progress-primary">
+                      <span class="progress-badge">Angular (Angular JS & Angular 7)</span>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                          data-aos-duration="2000" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                          aria-valuemax="100" style="width: 80%"></div>
+                        <span class="progress-value">80%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
 
-  <!-- Contact -->
-  <section id="contact" class="py-5 bg-light fade-in">
-    <div class="container">
-      <h2 class="mb-4 text-center fw-bold">Contact</h2>
-      <form class="mx-auto" style="max-width: 600px;">
-        <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Full name">
-        </div>
-        <div class="mb-3">
-          <input type="email" class="form-control" placeholder="Email">
-        </div>
-        <div class="mb-3">
-          <textarea class="form-control" rows="4" placeholder="Message"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary w-100">Send</button>
-      </form>
-    </div>
-  </section>
+              <fieldset class="border p-3">
+                <legend style="width: auto">Back End Skill</legend>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="progress-container progress-primary">
+                      <span class="progress-badge">C#</span>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                          data-aos-duration="2000" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                          aria-valuemax="100" style="width: 95%"></div>
+                        <span class="progress-value">95%</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="progress-container progress-primary">
+                      <span class="progress-badge">Node JS</span>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                          data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                          aria-valuemax="100" style="width: 60%"></div>
+                        <span class="progress-value">60%</span>
+                      </div>
+                    </div>
+                  </div>
 
-  <!-- Footer -->
-  <footer class="py-3 text-center bg-dark text-light">
-    <p class="mb-0">© 2025 Hoang An - Student Portfolio</p>
+                  <div class="col-md-6">
+                    <div class="progress-container progress-primary">
+                      <span class="progress-badge">ABAP</span>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                          data-aos-duration="2000" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                          aria-valuemax="100" style="width: 80%"></div>
+                        <span class="progress-value">80%</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="progress-container progress-primary">
+                      <span class="progress-badge">SQL</span>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                          data-aos-duration="2000" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                          aria-valuemax="100" style="width: 90%"></div>
+                        <span class="progress-value">90%</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="progress-container progress-primary">
+                      <span class="progress-badge">Entity Framework</span>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                          data-aos-duration="2000" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                          aria-valuemax="100" style="width: 80%"></div>
+                        <span class="progress-value">80%</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="progress-container progress-primary">
+                      <span class="progress-badge">Spring Framework</span>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                          data-aos-duration="2000" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                          aria-valuemax="100" style="width: 50%"></div>
+                        <span class="progress-value">50%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+			  
+			  <fieldset class="border p-3">
+                <legend style="width: auto">Database Skill</legend>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="progress-container progress-primary">
+                      <span class="progress-badge">SQL Server</span>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                          data-aos-duration="2000" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                          aria-valuemax="100" style="width: 95%"></div>
+                        <span class="progress-value">95%</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="progress-container progress-primary">
+                      <span class="progress-badge">PostgreSQL</span>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                          data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                          aria-valuemax="100" style="width: 60%"></div>
+                        <span class="progress-value">60%</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="progress-container progress-primary">
+                      <span class="progress-badge">MySQL</span>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
+                          data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                          aria-valuemax="100" style="width: 60%"></div>
+                        <span class="progress-value">60%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section pt-0" id="project">
+        <div class="container">          
+          <div class="h4 text-center mb-5 title">Projects</div>
+          <div class="tab-content gallery">
+            <div class="tab-pane active" id="web-development">
+              <div class="ml-auto mr-auto">
+                <div class="row">                  
+                  <div class="col-md-6">
+                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                      <a href="https://gonsa.com.vn/" target="_blank">
+                        <figure class="cc-effect">
+                          <img src="images/gonsa.jpg" class="w-100" height="280px" alt="Image" />
+                          <figcaption>
+                            <div class="h4" style="margin-top: 15%">
+                              Gonsa Landing Page
+                            </div>
+                            <p>Web Designer</p>
+                          </figcaption>
+                        </figure>
+                      </a>
+                    </div>
+                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                      <a href="https://quayso.gonsa.com.vn/" target="_blank">
+                        <figure class="cc-effect">
+                          <img src="images/gacha.png" alt="Image" />
+                          <figcaption>
+                            <div class="h4" style="margin-top: 30%">
+                              Gonsa Gacha App
+                            </div>
+                            <p>Web Fullstack Development</p>
+                          </figcaption>
+                        </figure>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                      <a href="https://vitgym.com/" target="_blank">
+                        <figure class="cc-effect">
+                          <img src="images/nidec.png" alt="Image" />
+                          <figcaption>
+                            <div class="h4" style="margin-top: 15%">
+                              Nidec Factory Project
+                            </div>
+                            <p>Solution Architect</p>
+                          </figcaption>
+                        </figure>
+                      </a>
+                    </div>
+                    <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                      <a href="https://vitadairy.vn/" target="_blank">
+                        <figure class="cc-effect">
+                          <img src="images/vita.png" class="w-100" height="180px" alt="Image" />
+                          <figcaption>
+                            <div class="h4" style="margin-top: 15%">
+                              Vitadairy Project
+                            </div>
+                            <p>Web Fullstack Development</p>
+                          </figcaption>
+                        </figure>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section pt-0"  id="experience">
+        <div class="container cc-education">
+          <div class="h4 text-center mb-5 title">Work Experience</div>
+          <div class="card">
+            <div class="row">
+              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body h-100 cc-education-header">
+                  <p>April 2024 - Present</p>
+                  <div class="h5">Vitadairy Vietnam Joint Stock Company</div>
+                </div>
+              </div>
+              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body">
+                  <div class="h5 font-weight-400 mb-3">Senior SAP ABAP</div>
+                  <p class="ml-2"> - Designed and implemented RICEF objects using best practices.</p>
+                  <p class="ml-2"> - Hands-on with S/4HANA and performance optimization.</p>
+                  <p class="ml-2"> - Collaborated with functional consultants to translate business needs into technical solutions.</p>
+                  <p class="ml-2"> - Experienced in ALV reporting, Adobe/Smart Forms, and integration via BAPI, OData, BTP.</p>
+                  <p class="ml-2"> - Handling Api for Front-End (Web App).</p>                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="row">
+              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body h-100 cc-education-header">
+                  <p>October 2019 - March 2024</p>
+                  <div class="h5">Gonsa Joint Stock Company</div>
+                </div>
+              </div>
+              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body">
+                  <div class="h5 font-weight-400 mb-3">Bussiness Analyst & DBA Team Leader</div>
+                  <p class="ml-2"> - Database architecture for company product projects.</p>
+                  <p class="ml-2"> - Deploy SAP S4/HANA as a Business Analyst and make the development reports as a ABAP developer.</p>
+                  <p class="ml-2"> - Deploy the company's digital transformation project (ERP, HRM, WORKPLACE, DMS, WMS, TMS, OMS) as a Business Analyst and Solution Architect.</p>
+                  <p class="ml-2"> - Build Product for company:.</p>
+                  <p class="ml-4"> + Web master - CMS - CRM (ReactJS, Angular).</p>
+                  <p class="ml-4"> + Program a server (ASP.NET Core, .NET Framework).</p>
+                  <p class="ml-4"> + Program a database (SQL Server).</p>
+				  <p class="ml-2"> - Design automatic reports to serve the administrative requirements of departments: CS, Accouting, Logistic, Supply Chain...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+		  <div class="card">
+            <div class="row">
+              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body h-100 cc-education-header">
+                  <p>July 2015 - September 2019</p>
+                  <div class="h5">Nidec Copal Precision Vietnam</div>
+                </div>
+              </div>
+              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body">
+                  <div class="h5 font-weight-400 mb-3">C# .NET Developer & Database Administrator</div>
+                  <p class="ml-2"> - Communicate with PostgreSQL, SQL Server 2017 to take and analyst the data. Create the Software to Control Product Life Cycle (MES).</p>
+                  <p class="ml-2"> - Calculate, insert, update data into database.</p>
+                  <p class="ml-2"> - Working with programming team to make MES (Manufacturing Execution System) for Nidec factories in Tokyo.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section pt-0" id="education">
+        <div class="container cc-education">
+          <div class="h4 text-center mb-5 title">Education</div>
+          <div class="card">
+            <div class="row">
+              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body h-100 cc-education-header">
+                  <p>August 2013 - June 2015</p>
+                  <div class="h5">Higher Diploma in Infrastructure Management Services</div>
+                </div>
+              </div>
+              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body">
+                  <div class="h5">Jetking Certified Computer Science Professional (JCCSP)</div>
+                  <p class="category">FPT Jetking - FPT University</p>
+				  <p>
+                    <b>Grade:</b> Hornors
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="row">
+              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body h-100 cc-education-header">
+                  <p>2010 - 2013</p>
+                  <div class="h5">High School</div>
+                </div>
+              </div>
+              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body">
+                  <div class="h5">High School Graduation</div>
+                  <p class="category">Nguyen Trai High School</p>
+                  <p>
+                    <b>Grade:</b> Good
+                  </p>
+                  <p>
+                    <b>Conduct:</b> Good
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section" id="contact">
+        <div class="cc-contact-information" style="background-image: url('images/staticmap.png')">
+          <div class="container">
+            <div class="cc-contact">
+              <div class="row">
+                <div class="col-md-9">
+                  <div class="card mb-0" data-aos="zoom-in">
+                    <div class="h4 text-center title">Contact Me</div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <form action="https://formspree.io/f/mjvjzyba" method="POST">
+                            <div class="p pb-3">
+                              <strong>Feel free to contact me </strong>
+                            </div>
+                            <div class="row mb-3">
+                              <div class="col">
+                                <div class="input-group">
+                                  <span class="input-group-addon"><i class="fa fa-user-circle"></i></span>
+                                  <input class="form-control" type="text" name="Name" placeholder="Name"
+                                    required="required" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row mb-3">
+                              <div class="col">
+                                <div class="input-group">
+                                  <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                                  <input class="form-control" type="tel" name="Phone" placeholder="Phone Number"
+                                    required="required" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row mb-3">
+                              <div class="col">
+                                <div class="input-group">
+                                  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                  <input class="form-control" type="email" name="_replyto" placeholder="E-mail"
+                                    required="required" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row mb-3">
+                              <div class="col">
+                                <div class="input-group">
+                                  <span class="input-group-addon"><i class="fa fa-comments"></i></span>
+                                  <input class="form-control" type="text" name="Topic" placeholder="Topic"
+                                    required="required" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row mb-3">
+                              <div class="col">
+                                <div class="form-group">
+                                  <textarea class="form-control" name="message" placeholder="Your Message"
+                                    required="required"></textarea>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col">
+                                <button class="btn btn-primary w-100" type="submit">
+                                  Send
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <p class="mb-0"><strong>Address </strong></p>
+                          <p class="pb-0 mb-0">
+                            Ho Chi Minh City
+                          </p>
+                          <p class="mb-0"><strong>Phone</strong></p>
+                          <p class="pb-2"> +84354664688</p>
+                          <p class="mb-0"><strong>Email</strong></p>
+                          <p>hoangan257266@gmail.com</p>
+
+                          <div class="container">
+                            <div class="button-container">
+                              <a class="btn btn-default btn-round btn-lg btn-icon"
+                                href="https://www.facebook.com/hoangan.nguyen.1656" target="_blank" rel="tooltip"
+                                title="Follow me on Facebook"><i class="fa fa-facebook"></i></a>
+                              <a class="btn btn-default btn-round btn-lg btn-icon" onclick="zalo()" rel="tooltip"
+                                title="Follow me on Zalo"><img src="images/zalo-2.png" class="p-2"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="h4 title text-center">Nguyễn Hoàng An</div>
+    <div class="text-center text-muted">    
+      <p>
+        &copy; CopyRight 2025
+      </p>
+    </div>
   </footer>
-
-  <!-- Back to top -->
-  <button id="backToTop" class="btn btn-primary rounded-circle">↑</button>
-  
-  <script src="js/control.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/core/jquery.3.2.1.min.js?ver=1.1.0"></script>
+  <script src="js/core/popper.min.js?ver=1.1.0"></script>
+  <script src="js/core/bootstrap.min.js?ver=1.1.0"></script>
+  <script src="js/now-ui-kit.js?ver=1.1.0"></script>
+  <script src="js/aos.js?ver=1.1.0"></script>
+  <script src="scripts/main.js?ver=1.1.0"></script>
 
 </body>
+
 </html>
